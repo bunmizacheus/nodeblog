@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "allowSyntheticDefaultImports": true,
+    "module": "esnext",
+    "target": "es2017",
+    "lib": ["esnext", "dom"],
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "paths": {
+      "@/*": ["*"],
+      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
+      "@helpers/*": ["helpers/*"],
+      "@constants/*": ["constants/*"],
+      "@utils/*": ["utils/*"]
+    }
+  },
+  "include": ["./src/**/*", "./configs/webpack/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "scripts",
+    "webpack",
+    "jest",
+    "src/setupTests.js",
+    "**/*/*.test.ts"
+  ]
+}
